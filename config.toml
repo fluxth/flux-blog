@@ -29,5 +29,5 @@ repo = "https://github.com/fluxth/flux-blog"
 
 google_analytics = { enabled = true, id = "G-0KXE0067PX"}
 links = [
-    { url = 'https://flux.ci', name = 'back to main site' }
+    { url = 'https://flux.ci', name = 'MAIN_SITE' }
 ]

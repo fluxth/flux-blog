@@ -171,6 +171,9 @@
   }
   .menu li + li {
     margin-left: var(--gap);
+    @media(max-width: 576px) {
+      margin-left: 12px;
+    }
   }
   .menu a {
     font-size: 16px;

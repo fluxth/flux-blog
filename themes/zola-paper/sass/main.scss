@@ -46,3 +46,9 @@ body.dark .dark-mode-toggle {
     padding-top: 1px;
   }
 }
+
+.hide-sm {
+  @media (max-width: 576px) {
+    display: none;
+  }
+}

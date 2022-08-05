@@ -75,7 +75,15 @@
                         </a>
                     </li>
                     {% block sidebar_nav %}{% for link in config.extra.links %}
-                    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+                    <li>
+                        <a href="{{ link.url }}">
+                            {% if link.name == 'MAIN_SITE' %}
+                                <span class="hide-sm">back to </span>main site
+                            {% else %}
+                                {{ link.name }}
+                            {% endif %}
+                        </a>
+                    </li>
                     {% endfor %}{% endblock sidebar_nav %}
                 </ul>
             </nav>
