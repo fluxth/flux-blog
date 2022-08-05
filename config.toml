@@ -25,7 +25,7 @@ highlight_theme = 'gruvbox-dark'
 
 [extra]
 # Put all your custom variables here
-repo = "https://github.com/nanxiaobei/hugo-paper/"
+repo = "https://github.com/fluxth/flux-blog"
 
 google_analytics = { enabled = true, id = "G-0KXE0067PX"}
 links = [
