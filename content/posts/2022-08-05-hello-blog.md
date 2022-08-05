@@ -1,6 +1,5 @@
 +++
 title = "Hello Blog!"
-date = 2022-08-05
 
 [extra]
 author = "Thitat Auareesuksakul"
@@ -10,9 +9,9 @@ tags = ["blog"]
 +++
 
 Hello there, thanks for visiting my blog.
-
+<br>
 Please hang tight...
-more contents incoming!
+the contents are brewing!
 <!-- more -->
 
 ```rust
@@ -21,4 +20,4 @@ fn meanwhile() {
 }
 ```
 
-:)
+_See you soon! また見てね :)_
