@@ -56,7 +56,7 @@
     </head>
     {% if page %}<body class="single">{% else %}<body class="list">{% endif %}
     {% block body %}
-        <header class="header">
+        <header class="header nav-header">
             <nav class="nav">
                 {% if page %}
                 <p class="logo"><a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></p>

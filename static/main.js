@@ -46,4 +46,14 @@ function setMode(mode, clear) {
       setMode("toggle");
     });
   });
+
+  const observer = new IntersectionObserver(
+    function (entries) {
+      const item = entries[0];
+      item.target.classList.toggle("stick", item.intersectionRatio < 1);
+    },
+    { threshold: [1] }
+  );
+
+  observer.observe(document.querySelector(".nav-header"));
 })();

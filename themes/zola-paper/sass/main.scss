@@ -34,3 +34,15 @@ body.dark .dark-mode-toggle {
   }
 }
 
+.nav-header {
+  position: sticky;
+  top: -1px;
+  background: var(--theme);
+  z-index: 100;
+  transition: box-shadow 200ms;
+
+  &.stick {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 1px;
+  }
+}
