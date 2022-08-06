@@ -122,6 +122,7 @@
             <span>Source code available on <a href="{{ config.extra.repo }}" rel="noopener" target="_blank">GitHub</a>️</span>
         </footer>
     {% endblock body %}
-    <script src="{{ get_url(path="main.js", trailing_slash=false) }}?h={{ get_file_hash(path="main.js", sha_type=256) | truncate(length=12, end="") }}"></script>
+    <script src="{{ get_url(path="main.js", trailing_slash=false) }}?h={{ get_file_hash(path="main.js", sha_type=256) | truncate(length=12, end="") }}"
+            integrity="sha384-{{ get_file_hash(path="main.js", sha_type=384, base64=true) | safe }}"></script>
     </body>
 </html>
