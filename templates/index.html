@@ -40,7 +40,7 @@
         <link rel="icon" type="image/png" href="/favicon.png">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
+        <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}?h={{ get_file_hash(path="main.css", sha_type=256) | truncate(length=12, end="") }}">
 
         <!-- Feeds -->
         {% if config.generate_feed %}<link rel="alternate" type={% if config.feed_filename == "atom.xml" %}"application/atom+xml"{% else %}"application/rss+xml"{% endif %} title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">{% endif %}
@@ -122,6 +122,6 @@
             <span>Source code available on <a href="{{ config.extra.repo }}" rel="noopener" target="_blank">GitHub</a>️</span>
         </footer>
     {% endblock body %}
-    <script src="/main.js"></script>
+    <script src="{{ get_url(path="main.js", trailing_slash=false) }}?h={{ get_file_hash(path="main.js", sha_type=256) | truncate(length=12, end="") }}"></script>
     </body>
 </html>
