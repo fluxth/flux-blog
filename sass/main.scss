@@ -52,3 +52,16 @@ body.dark .dark-mode-toggle {
     display: none;
   }
 }
+
+.post-content {
+  .highlight,
+  pre {
+    @media (max-width: 688px) {
+      border-radius: 0;
+    }
+
+    code {
+      overflow-x: auto;
+    }
+  }
+}
