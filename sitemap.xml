@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://blog.flux.ci/</loc>
+    </url>
+    <url>
+        <loc>https://blog.flux.ci/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://blog.flux.ci/posts/</loc>
+    </url>
+    <url>
+        <loc>https://blog.flux.ci/posts/hello-blog/</loc>
+        <lastmod>2022-08-05</lastmod>
+    </url>
+    <url>
+        <loc>https://blog.flux.ci/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://blog.flux.ci/tags/</loc>
+    </url>
+    <url>
+        <loc>https://blog.flux.ci/tags/blog/</loc>
+    </url>
+    <url>
+        <loc>https://blog.flux.ci/tags/blog/page/1/</loc>
+    </url>
+</urlset>
